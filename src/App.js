@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button>Hello World</Button>
+        <Button onClick={()=>alert("Hello")} href="#" variant="contained" color="primary">Hello World</Button>
         <img src={logo} className="App-logo" alt="logo" />
         
       </header>
