@@ -4,12 +4,16 @@ import { Button, Checkbox, FormControlLabel } from "@mui/material";
 import { useState } from "react";
 // import SaveIcon from "@mui/icons-material/SaveIcon"
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import MenuIcon from "@mui/icons-material/Menu";
 import { ButtonGroup } from "@mui/material";
 import { DeleteForever } from "@mui/icons-material";
-import { TextField } from "@mui/material";
 import { Typography } from "@mui/material";
 // import "fontsource-roboto"
 import { Container, Paper, Grid } from "@mui/material";
+
+import { AppBar } from "@mui/material";
+import { Toolbar } from "@mui/material";
+import { IconButton } from "@mui/material";
 
 function CheckboxExample() {
   const [checked, setChecked] = useState(true);
@@ -37,9 +41,16 @@ function App() {
       <div className="App">
         <header className="App-header">
           {/* <TextField variant="filled" /> */}
-          <Typography variant="h1" component="h2" color="secondary">
-            h1. Heading
-          </Typography>
+          <AppBar>
+            <Toolbar>
+              <IconButton>
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="h6">MUI Themeing</Typography>
+              <Button>Login</Button>
+            </Toolbar>
+          </AppBar>
+
           <Typography variant="h2">Hello</Typography>
           <Typography variant="subtitle1">Hello</Typography>
           <Typography variant="subtitle1" component="div">
