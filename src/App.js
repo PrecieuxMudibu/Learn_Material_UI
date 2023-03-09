@@ -9,7 +9,7 @@ import { DeleteForever } from "@mui/icons-material";
 import { TextField } from "@mui/material";
 import { Typography } from "@mui/material";
 // import "fontsource-roboto"
-import { Container } from "@mui/material";
+import { Container, Paper, Grid } from "@mui/material";
 
 function CheckboxExample() {
   const [checked, setChecked] = useState(true);
@@ -33,7 +33,7 @@ function CheckboxExample() {
 
 function App() {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="xs">
       <div className="App">
         <header className="App-header">
           {/* <TextField variant="filled" /> */}
@@ -45,14 +45,21 @@ function App() {
           <Typography variant="subtitle1" component="div">
             DIV
           </Typography>
-          <TextField variant="outlined" color="secondary" type="date" />
-          <TextField
-            variant="outlined"
-            color="secondary"
-            type="email"
-            label="Email"
-            placeholder="test@gmail.com"
-          />
+
+          <Grid container spacing={2} justify="center">
+            <Grid item>
+              <Paper style={{ height: 75, width: 50 }} />
+            </Grid>
+            <Grid item>
+              <Paper style={{ height: 75, width: 50 }} />
+            </Grid>
+            <Grid item>
+              <Paper style={{ height: 75, width: 50 }} />
+            </Grid>
+            <Grid item>
+              <Paper style={{ height: 75, width: 50 }} />
+            </Grid>
+          </Grid>
           <CheckboxExample />
           <ButtonGroup>
             <Button
