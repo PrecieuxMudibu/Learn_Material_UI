@@ -7,7 +7,24 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { ButtonGroup } from "@mui/material";
 import {} from "@mui/material";
 import { DeleteForever } from "@mui/icons-material";
-// import {FormControlLabel} from "@mui/material";
+import { TextField } from "@mui/material";
+// import { makeStyles } from " @mui/styles";
+
+// const useStyles = makeStyles({
+//   root: {
+//     background: 'linear-gradient(45deg, #333, #999)',
+//     border: 0,
+//     borderRadius: 15,
+//     color: 'white',
+//     padding:"0 30px"
+//   }
+// })
+
+// function ButtonStyled() {
+//   const classes = useStyles();
+
+//   return <Button className={classes.root}>Test Styled Button</Button>
+// }
 
 function CheckboxExample() {
   const [checked, setChecked] = useState(true);
@@ -16,7 +33,6 @@ function CheckboxExample() {
     <div>
       <FormControlLabel
         control={
-         
           <Checkbox
             checked={checked}
             checkedIcon={<DeleteForever />}
@@ -34,6 +50,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        {/* <ButtonStyled /> */}
+        {/* <TextField variant="filled" /> */}
+
+        <TextField variant="outlined" color="secondary" type="date" />
+        <TextField
+          variant="outlined"
+          color="secondary"
+          type="email"
+          label="Email"
+          placeholder="test@gmail.com"
+        />
+
         <CheckboxExample />
 
         <ButtonGroup>
