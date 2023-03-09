@@ -33,53 +33,55 @@ function CheckboxExample() {
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <TextField variant="filled" /> */}
-        <Typography variant="h1" component="h2" color="secondary">
-          h1. Heading
-        </Typography>
-        <Typography variant="h2">Hello</Typography>
-        <Typography variant="subtitle1">Hello</Typography>
-        <Typography variant="subtitle1" component="div">
-          DIV
-        </Typography>
-        <TextField variant="outlined" color="secondary" type="date" />
-        <TextField
-          variant="outlined"
-          color="secondary"
-          type="email"
-          label="Email"
-          placeholder="test@gmail.com"
-        />
-        <CheckboxExample />
-        <ButtonGroup>
-          <Button
-            startIcon={<FavoriteIcon />}
-            end
-            Icon={<FavoriteIcon />}
-            onClick={() => alert("Hello")}
-            href="#"
-            variant="contained"
-            color="primary"
-          >
-            Discard
-          </Button>
-          <Button
-            startIcon={<FavoriteIcon />}
-            end
-            Icon={<FavoriteIcon />}
-            onClick={() => alert("Hello")}
-            href="#"
-            variant="contained"
+    <Container maxWidth="sm">
+      <div className="App">
+        <header className="App-header">
+          {/* <TextField variant="filled" /> */}
+          <Typography variant="h1" component="h2" color="secondary">
+            h1. Heading
+          </Typography>
+          <Typography variant="h2">Hello</Typography>
+          <Typography variant="subtitle1">Hello</Typography>
+          <Typography variant="subtitle1" component="div">
+            DIV
+          </Typography>
+          <TextField variant="outlined" color="secondary" type="date" />
+          <TextField
+            variant="outlined"
             color="secondary"
-          >
-            Save
-          </Button>
-        </ButtonGroup>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+            type="email"
+            label="Email"
+            placeholder="test@gmail.com"
+          />
+          <CheckboxExample />
+          <ButtonGroup>
+            <Button
+              startIcon={<FavoriteIcon />}
+              end
+              Icon={<FavoriteIcon />}
+              onClick={() => alert("Hello")}
+              href="#"
+              variant="contained"
+              color="primary"
+            >
+              Discard
+            </Button>
+            <Button
+              startIcon={<FavoriteIcon />}
+              end
+              Icon={<FavoriteIcon />}
+              onClick={() => alert("Hello")}
+              href="#"
+              variant="contained"
+              color="secondary"
+            >
+              Save
+            </Button>
+          </ButtonGroup>
+          <img src={logo} className="App-logo" alt="logo" />
+        </header>
+      </div>
+    </Container>
   );
 }
 
