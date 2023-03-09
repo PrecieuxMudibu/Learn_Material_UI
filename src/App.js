@@ -5,26 +5,11 @@ import { useState } from "react";
 // import SaveIcon from "@mui/icons-material/SaveIcon"
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { ButtonGroup } from "@mui/material";
-import {} from "@mui/material";
 import { DeleteForever } from "@mui/icons-material";
 import { TextField } from "@mui/material";
-// import { makeStyles } from " @mui/styles";
-
-// const useStyles = makeStyles({
-//   root: {
-//     background: 'linear-gradient(45deg, #333, #999)',
-//     border: 0,
-//     borderRadius: 15,
-//     color: 'white',
-//     padding:"0 30px"
-//   }
-// })
-
-// function ButtonStyled() {
-//   const classes = useStyles();
-
-//   return <Button className={classes.root}>Test Styled Button</Button>
-// }
+import { Typography } from "@mui/material";
+// import "fontsource-roboto"
+import { Container } from "@mui/material";
 
 function CheckboxExample() {
   const [checked, setChecked] = useState(true);
@@ -50,9 +35,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <ButtonStyled /> */}
         {/* <TextField variant="filled" /> */}
-
+        <Typography variant="h1" component="h2" color="secondary">
+          h1. Heading
+        </Typography>
+        <Typography variant="h2">Hello</Typography>
+        <Typography variant="subtitle1">Hello</Typography>
+        <Typography variant="subtitle1" component="div">
+          DIV
+        </Typography>
         <TextField variant="outlined" color="secondary" type="date" />
         <TextField
           variant="outlined"
@@ -61,9 +52,7 @@ function App() {
           label="Email"
           placeholder="test@gmail.com"
         />
-
         <CheckboxExample />
-
         <ButtonGroup>
           <Button
             startIcon={<FavoriteIcon />}
